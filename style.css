@@ -1,0 +1,285 @@
+@charset "utf-8";
+html
+{
+    height: 100%;
+}
+.header
+{
+    box-sizing: border-box;
+    height: 160px;
+    width: 100%;
+    background-color: #0078d7;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+    margin: 0px;
+}
+body
+{
+    color: #000000;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-weight: 400;
+    margin:0px;
+}
+form
+{
+    width: 50%;
+    margin: auto;
+    
+}
+form.login
+{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}
+input
+{
+    float: right;
+}
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=datetime-local]
+{
+    width: 70%;
+    height: 40px;
+    border: 2px solid #0078d7;
+    background-color: #ffffff;
+    font-size: 20px;
+    padding-left: 10px;
+}
+input[type=text]:focus, input[type=password]:focus 
+{
+    background-color: #eeeeee;
+    outline: none;
+}
+input[type=checkbox]
+{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 320px;
+}
+input[type=submit]
+{
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: #0078d7;
+}
+select
+{
+    width: 70%;
+    box-sizing: content-box;
+    height: 40px;
+    border: 2px solid #0078d7;
+    background-color: #ffffff;
+    font-size: 20px;
+    padding-left: 8px;
+}
+button.btn
+{
+    width: 120px;
+    height: 40px;
+    background-color: #cccccc;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+button.submit
+{
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: #0078d7;
+}
+button.home
+{
+
+    width: 100%;
+    height: 100%;
+    border: 2px solid #707070;
+    background-color: #0078d7;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+}
+button:hover
+{
+    opacity: 1;
+}
+table
+{
+    border-style: solid;
+    border-collapse: collapse;
+    border: solid 2px black;
+    width: 60%;
+    margin: auto;
+}
+tr
+{
+    border: 2px solid #808080;
+    
+}
+td
+{
+    text-align: center;
+}
+th
+{
+    background-color: #0078d7;
+    color: white;
+}
+div.home
+{
+    margin:50px auto 50px auto;
+    width: 300px;
+    height: 200px;
+}
+.home:hover
+{
+    opacity: 1;
+}
+a
+{
+    color: dodgerblue;
+}
+a.home
+{
+    color: white;
+    text-decoration: none;
+}
+a.logout, a.footer
+{
+    color: white;
+    text-decoration: none;
+}
+a.footer
+{
+    margin:36px;
+    float: left;
+}
+.sidenav
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 180px;
+}
+.sidenav a, .dropdown-btn
+{
+    background-color: #111;
+    padding: 10px 8px 10px 32px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+.dropdown-btn 
+{
+    width: 100%;
+}
+.sidenav a:hover, .dropdown-btn:hover 
+{
+    color: #f1f1f1;
+}
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.active 
+{
+    background-color: #0078d7;
+    color: white;
+}
+.dropdown-container 
+{
+    width: 100%;
+    height: 0;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222222;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.fa-caret-down 
+{
+    float: right;
+    padding-right: 8px;
+}
+.container 
+{
+    z-index: 2;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+}
+.bar1, .bar2, .bar3 
+{
+    z-index: 2;
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+}
+.change .bar1 
+{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2
+{
+    opacity: 0;
+}
+.change .bar3 
+{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+div.footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #0078d7;
+    color: white;
+    text-align: center;
+    padding-right: 100px;
+}
+.fab
+{
+    font-size: 40px;
+    margin: 30px;
+    float: right;
+    cursor: pointer;
+}
